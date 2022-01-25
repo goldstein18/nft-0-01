@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'DK Cool Crayon', sans-serif;
+}
+
+body {
+  background: url(blueprint.webp);
+}
+
+header {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+
+nav ul {
+  /* border: 1px solid red; */
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 950px;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+nav li {
+  margin: 0;
+  /* border: 1px solid yellow; */
+}
+.connect {
+  padding-top: 10px;
+}
+
+a {
+  background: transparent;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.5rem;
+
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+}
+
+nav a {
+  text-decoration: none;
+  border: solid 3px #ffffff;
+  /* border: 1px solid purple; */
+  font-size: 1.3rem;
+}
+
+li form {
+  background: transparent;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.5rem;
+
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+
+  padding: 5px;
+}
+li form label {
+  font-size: 1.3rem;
+  /* margin-left: 3rem; */
+}
+
+li form select {
+  border: 0;
+  color: black;
+  font-size: 1.3rem;
+}
+li form select option {
+  border: 1px solid white;
+  color: black;
+}
+
+li form input {
+  background: transparent;
+  color: white;
+
+  padding: 3px;
+
+  font-size: 1.3rem;
+  background: transparent;
+  padding: 0.5rem 0.5rem;
+  margin: 0 0.5rem;
+
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+
+  padding: 5px;
+  border: 3px solid white;
+}
+
+.bg-paint {
+  position: relative;
+}
+.bd-paint-one {
+  position: absolute;
+  bottom: -130px;
+  left: -30px;
+  transform: rotate(-10deg);
+}
+.bd-paint-one img {
+  height: 250px;
+  width: 250px;
+}
+.bd-paint-two {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+  transform: rotate(10deg);
+}
+.bd-paint-two img {
+  height: 250px;
+  width: 250px;
+}
+.bd-paint-three {
+  position: absolute;
+  top: 234px;
+  left: -20px;
+  transform: rotate(-10deg);
+}
+.bd-paint-three img {
+  height: 250px;
+  width: 250px;
+}
+.bd-paint-four {
+  position: absolute;
+  right: 0;
+  top: 108px;
+}
+.bd-paint-four img {
+  height: 377px;
+}
+
+.pricing {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 120px;
+  font-size: 1rem;
+}
+
+.openlink {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 675px) and (max-width: 992px) {
+  .bd-paint-one {
+    bottom: -183px;
+  }
+  .bd-paint-two {
+    top: 140px;
+    left: 3%;
+  }
+  .bd-paint-three {
+    top: 375px;
+  }
+  .bd-paint-four {
+    top: 80px;
+  }
+  .bd-paint-four img {
+    height: 400px;
+  }
+  nav ul {
+    top: 28%;
+  }
+}
+
+@media (max-width: 675px) {
+  .openlink {
+    font-size: 1.25rem;
+  }
+  .container-nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .connect {
+    margin-bottom: 10px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  nav li {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    width: 384px;
+    top: 50%;
+  }
+  .pricing {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 250px;
+    width: 50%;
+
+    font-size: 1rem;
+  }
+  li form input {
+    font-size: 0.8rem;
+  }
+  li form label {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+  li form select {
+    font-size: 0.8rem;
+  }
+  .bd-paint-one {
+    bottom: -102px;
+    left: -20px;
+    transform: rotate(-10deg);
+  }
+  .bd-paint-one img {
+    height: 150px;
+    width: 150px;
+  }
+  .bd-paint-two {
+    top: 165px;
+    left: 0px;
+    transform: rotate(10deg);
+  }
+  .bd-paint-two img {
+    height: 150px;
+    width: 150px;
+  }
+  .bd-paint-three {
+    top: 320px;
+    left: 0;
+    transform: rotate(-10deg);
+  }
+  .bd-paint-three img {
+    height: 150px;
+    width: 150px;
+  }
+  .bd-paint-four {
+    top: 200px;
+  }
+  .bd-paint-four img {
+    height: 270px;
+  }
+  .site-title h1 {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    padding-top: 100px;
+    flex-direction: column;
+  }
+  nav ul {
+    top: 25%;
+  }
+  .connect {
+    margin-bottom: 10px;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  li form label {
+    font-size: 1rem;
+  }
+  li form input {
+    font-size: 1rem;
+  }
+}
